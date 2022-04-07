@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        a {
+            position: relative; /* Para que a imagem não saia fora do link */
+            display: block;
+            width: 10%;
+            padding: 5px 0;            
+            text-decoration: none;
+            color:black;
+        }
+       
+        a span {
+            display: none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+        }
+
+        a:hover span {
+            display: block; /* Tranforma o SPAN em um elemento do tipo bloco */
+            position: absolute; /* Para você poder posicionar a vontade, sem quebrar o layour em volta */    
+            left: 100%; /* Empurra a imagem para fora do link, ficando a lado do mesmo */
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Receita de bolo</h1>
+    <Ul>
+        <li>
+            <a href="#">ovos<span><img src="https://static3.depositphotos.com/1000693/112/i/600/depositphotos_1120769-stock-photo-chicken-egg.jpg"></span></a>
+        </li>
+        <li>
+            <a href="#">chocolate em pó<span><img src="https://static.paodeacucar.com/img/uploads/1/250/12119250.jpg"></span></a>
+        </li>
+        <li>
+            <a href="#">manteiga<span><img src="https://carrefourbr.vtexassets.com/arquivos/ids/13997446/manteiga-extra-com-sal-carrefour-tablete-200-g-1.jpg?v=637498489220730000"></span></a>
+        </li>
+        <li>
+            <a href="#">farinha de trigo<span><img src="https://boutiquedeorganicos.com.br/wp-content/uploads/2021/07/Farinha-de-Trigo-Org.jpeg"></span></a>
+        </li>
+        <li>
+            <a href="#">açúcar<span><img src="https://static.escolakids.uol.com.br/image/acucar.jpg"></span></a>
+        </li>
+        <li>
+            <a href="#">fermento<span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZnN5lFK_mdRGeMycnOZSSwRxFwto-qtRv5wX8r-IC_C_WiINr3qT1fdJULlDyVspsds&usqp=CAU"></span></a>
+        </li>
+        <li>
+            <a href="#">leite<span><img src="https://static.paodeacucar.com/img/uploads/1/194/531194.jpg"></span></a>
+        </li>
+        <li>
+            <a href="#">creme de leite<span><img src="https://www.coalhadas.com.br/site/wp-content/uploads/2016/11/creme-single.png"></span></a>
+        </li>
+
+    </Ul>    
+</body>
+</html>
