@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Formulario</title>
+    <style>
+        body {
+            padding: 10px 10px;
+        }
+
+        .div {
+            margin: auto;
+            width: 40%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <center>
+            <h1>Fale conosco</h1><br>
+        </center>
+
+        <form action="https://portal.sc.senac.br/">
+
+            <input type="radio" id="aluno" name="radius" value="aluno" class="form-check-input" required>
+            <label for="aluno">Aluno</label><br>
+            <input type="radio" id="exaluno" name="radius" value="exaluno" class="form-check-input">
+            <label for="exaluno">Ex-Aluno</label><br>
+            <input type="radio" id="empresa" name="radius" value="empresa" class="form-check-input">
+            <label for="empresa">Empresa</label><br>
+            <input type="radio" id="outro" name="radius" value="outro" class="form-check-input">
+            <label for="outro">Outro</label><br><br>
+
+            <label for="nome">Nome/Nome social *</label><br>
+            <input type="text" id="nome" name="nome" required class="form-control"
+                placeholder="Digite seu nome ou nome social">
+
+            <label for="email">E-mail *</label><br>
+            <input type="text" id="email" name="email" required class="form-control" placeholder="Digite seu e-mail">
+
+            <label for="nemail">Informe novamente seu E-mail *</label><br>
+            <input type="text" id="nemail" name="nemail" required class="form-control"
+                placeholder="Digite novamente seu e-mail">
+
+            <label for="cpf">CPF *</label><br>
+            <input type="text" id="cpf" name="cpf" required class="form-control" placeholder="Digite seu CPF">
+
+            <label for="cidade">Cidade *</label><br>
+            <input type="text" id="cidade" name="cidade" required class="form-control" placeholder="Digite sua Cidade">
+
+            <label for="cpf">Endereço</label><br>
+            <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Digite seu Endereço">
+
+            <label for="estado">Estado *</label><br>
+            <select class="form-select form-select-sm" id="estado" name="estado" required>
+                <option value="">Selecione UF</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MG">MG</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="PR">PR</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="RS">RS</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+
+            <label for="cep">CEP</label><br>
+            <input type="text" id="cep" name="cep" required class="form-control" placeholder="Digite seu CEP">
+
+            <label for="telefone">Telefone</label><br>
+            <input type="text" id="telefone" name="telefone" required class="form-control"
+                placeholder="Digite seu Telefone">
+
+            <label for="fax">Fax</label><br>
+            <input type="text" id="fax" name="fax" required class="form-control" placeholder="Digite seu Fax">
+
+            <label for="unidadedestino">Unidade de Destino *</label><br>
+            <select class="form-select form-select-sm" id="unidadedestino" name="unidadedestino" required>
+                <option value="">Selecione a unidade de seu interesse</option>
+                <option value="Administração Regional">Administração Regional</option>
+                <option value="Faculdade Senac  Florianópolis">Faculdade Senac Florianópolis</option>
+                <option value="Faculdade Senac Blumenau">Faculdade Senac Blumenau</option>
+                <option value="Faculdade Senac Brusque">Faculdade Senac Brusque</option>
+                <option value="Faculdade Senac Caçador">Faculdade Senac Caçador</option>
+                <option value="Faculdade Senac Chapecó">Faculdade Senac Chapecó</option>
+                <option value="Faculdade Senac Concórdia">Faculdade Senac Concórdia</option>
+                <option value="Faculdade Senac Criciúma">Faculdade Senac Criciúma</option>
+                <option value="Faculdade Senac Jaraguá do Sul">Faculdade Senac Jaraguá do Sul</option>
+                <option value="Faculdade Senac Joinville">Faculdade Senac Joinville</option>
+                <option value="Faculdade Senac Lages">Faculdade Senac Lages</option>
+                <option value="Faculdade Senac Palhoça">Faculdade Senac Palhoça</option>
+                <option value="Faculdade Senac Porto União">Faculdade Senac Porto União</option>
+                <option value="Faculdade Senac Rio do Sul">Faculdade Senac Rio do Sul</option>
+                <option value="Faculdade Senac São Miguel do Oeste">Faculdade Senac São Miguel do Oeste</option>
+                <option value="Faculdade Senac Tubarão">Faculdade Senac Tubarão</option>
+                <option value="Faculdade Senac Videira">Faculdade Senac Videira</option>
+                <option value="Florianópolis - Faculdade Senac Saúde e Beleza">Florianópolis - Faculdade Senac Saúde e
+                    Beleza</option>
+                <option value="Senac Araranguá">Senac Araranguá</option>
+                <option value="Senac Blumengarten">Senac Blumengarten</option>
+                <option value="Senac Campos Novos">Senac Campos Novos</option>
+                <option value="Senac Canoinhas">Senac Canoinhas</option>
+                <option value="Senac Curitibanos">Senac Curitibanos</option>
+                <option value="Senac EaD">Senac EaD</option>
+                <option value="Senac Itajaí">Senac Itajaí</option>
+                <option value="Senac Joaçaba">Senac Joaçaba</option>
+                <option value="Senac Mafra">Senac Mafra</option>
+                <option value="Senac Restaurante-Escola">Senac Restaurante-Escola</option>
+                <option value="Senac São Bento do Sul">Senac São Bento do Sul</option>
+                <option value="Senac Timbó">Senac Timbó</option>
+                <option value="Senac Xanxerê">Senac Xanxerê</option>
+            </select>
+
+            <label for="mensagem">Mensagem *</label><br>
+            <textarea class="form-control" id="mensagem" required rows="6"
+                placeholder="Digite sua mensagem"></textarea><br>
+
+            <input type="checkbox" id="politica" name="politica" value="politica" class="form-check-input" required>
+            <label for="politica">Li e Aceito os termos da <a
+                    href="https://portal.sc.senac.br/portal/politica-de-privacidade.html" target="_blank">Política de
+                    Privacidade</a></label><br><br>
+
+            <center>
+                <div class="gap-2 col-6 mx-auto">
+                    <input type="enviar" value="Enviar" class="btn btn-success">
+                    <input type="resete" value="Limpar" class="btn btn-danger">
+                </div>
+            </center><br><br>
+
+            <p>
+                * Campo de preenchimento obrigatório.<br>
+                * Todas as informações são sigilosas.
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
